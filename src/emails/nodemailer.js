@@ -11,7 +11,7 @@ const transporter = nodemailer.createTransport({
     service:'gmail',
     auth: {
         type: 'OAuth2',
-        user: 'gabrielmichaeljw@gmail.com',
+        user: 'gabrielmichaelfx@gmail.com',
         clientId: process.env.CLIENT_ID,
         clientSecret: process.env.CLIENT_SECRET,
         refreshToken: process.env.REFRESH_TOKEN
@@ -72,7 +72,7 @@ pdf.create(htmls, options).toFile(`${fileDir}/result.pdf`, (err, result) => {
 const sendVerify = (username, name, email) => {
     const transEmail = () =>{
         const mail = {
-            from : 'Rochafi Alvin <rochafi.dev@gmail.com>',
+            from : 'Gabriel Michael <rekreasidotcom@gmail.com>',
             to: email,
             subject: 'Verifikasi Email',
             html: `<p>Hello ${name}, please click the link for verify your email</p>
