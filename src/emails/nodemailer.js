@@ -72,7 +72,7 @@ pdf.create(htmls, options).toFile(`${fileDir}/result.pdf`, (err, result) => {
 const sendVerify = (username, name, email) => {
     const transEmail = () =>{
         const mail = {
-            from : 'Gabriel Michael <rekreasidotcom@gmail.com>',
+            from : 'Gabriel Michael <gabrielmichaeljw@gmail.com>',
             to: email,
             subject: 'Verifikasi Email',
             html: `<p>Hello ${name}, please click the link for verify your email</p>
